@@ -4,21 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle de Acesso</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="header">
+    <header>
         <h1 class="titulo1">Verifique seu controle de Acesso</h1>
+    </header>
+
+
+    <div class="menu">
+        <div class="junta">
+            <div class="label">
+                <label for="cartao">
+                    Número do Cartão de Identificação:
+                </label>
+            </div>
+
+            <div class="numero">
+                <input type="number" id="cartao">
+            </div>
+        </div>
+        <div class="acesso">
+            <button onclick="verificarAcesso()">Verificar Acesso</button>
+        </div>
+        <div class="resultado">
+            <p id="resultado"></p>
+        </div>
     </div>
-
-    <label for="cartao">
-        Número do Cartão de Identificação:
-    </label>
-
-    <input type="number" id="cartao">
-    <button onclick="verificarAcesso()">Verificar Acesso</button>
-    <p id="resultado"></p>
 
     <script src="script.js"></script>
 </body>

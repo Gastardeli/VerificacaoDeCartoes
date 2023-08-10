@@ -11,6 +11,19 @@ function verificarAcesso() {
     } else {
         mensagem = "Número de cartão inválido.";
     }
-
     document.getElementById("resultado").textContent = mensagem;
+}
+
+switch (verificarAcesso) {
+    case "Acesso total a todas as áreas restritas.":
+        cor.backgroundColor = 'green';
+        break;
+    case "Acesso limitado a algumas áreas restritas.":
+        cor.backgroundColor = 'yellow';
+        break;
+    case "Acesso negado. Sem permissão para acessar as áreas restritas.":
+        cor.backgroundColor = 'red';
+        break;
+    default:
+        cor.backgroundColor = 'white'
 }
